@@ -66,9 +66,9 @@ public class Lift {
         Lift lift = new Lift(5, new FillLiftState(10, map));
         lift.setCurrentFloor(0);
         while (true) {
-            System.out.println("current floor = " + lift.getCurrentFloor() + " passenger in lift = " + lift.getPassengers().size() );
+            System.out.println("current floor = " + lift.getCurrentFloor() + " passenger in lift = " + lift.getPassengers().size() + " waiting passenger = " + map);
             lift.run();
-            System.out.println("after waiting passengers = " + map);
+            //System.out.println("after run " + map);
         }
     }
 }
